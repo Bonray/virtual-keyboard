@@ -1,0 +1,121 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/roboto-medium.woff2') format('woff2'),
+       url('../fonts/roboto-medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 670px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.textarea {
+  width: 100%;
+  height: 200px;
+  margin: 0 auto 30px;
+}
+
+.keyboard {
+  width: max-content;
+  margin: 0 auto 30px;
+}
+
+.keyboard__row {
+  display: flex;
+  column-gap: 5px;
+}
+
+.keyboard__row:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.keyboard__key {
+  display: block;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 3px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #fff;
+  background-color: #353352;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+span.hidden {
+  display: none;
+}
+
+.ru,
+.en {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.keyboard__key.Backquote,
+.keyboard__key.Backspace,
+.keyboard__key.Tab,
+.keyboard__key.Delete,
+.keyboard__key.CapsLock,
+.keyboard__key.Enter,
+.keyboard__key.ShiftLeft,
+.keyboard__key.ShiftRight,
+.keyboard__key.ControlLeft,
+.keyboard__key.ControlRight,
+.keyboard__key.Meta,
+.keyboard__key.AltLeft,
+.keyboard__key.AltRight,
+.keyboard__key.ArrowUp,
+.keyboard__key.ArrowLeft,
+.keyboard__key.ArrowDown,
+.keyboard__key.ArrowRight {
+  background-color: #303030;
+  color:#a1a1a1;
+}
+
+.keyboard__key:hover {
+  background-color: #a7f47c;
+}
+
+.keyboard__key:active,
+.keyboard__key.pressed {
+  background-color: #87c765;
+}
+
+.keyboard__key.Backspace,
+.keyboard__key.CapsLock,
+.keyboard__key.Enter {
+  width: 85px;
+}
+
+.keyboard__key.ShiftLeft {
+  width: 130px;
+}
+
+.keyboard__key.Space {
+  width: 310px;
+}
+
+.info {
+  text-align: center;
+}
