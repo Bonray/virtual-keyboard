@@ -100,6 +100,7 @@ span.hidden {
 .keyboard__key:active,
 .keyboard__key.pressed {
   background-color: #87c765;
+  transform: translateY(2px);
 }
 
 .keyboard__key.Backspace,
